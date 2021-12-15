@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="color:white;text-align:center;font-size:400%"><span style="background: rgba(0, 0, 0, 0.4);">&nbspStargazing Guide&nbsp</span></h1>
+<title>{{page_title}}</title>
+</head>
+<body style="background-image:linear-gradient(rgba(60, 150, 255, 0.2), rgba(255, 255, 255, 0)),url('https://peoetobicoke.files.wordpress.com/2016/11/o-star-quotes-gps-guide-facebook.jpg');
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;">
+<form action="forecastresponse" method="get" style="font-size:150%;">
+        <br><div style="color:white;text-align:center;font-weight:bold"><label for="name">Please enter a city name:
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </label><input style="width:330px;height:24px;background-color:#FDEBD0;"
+                       type="text" id="name" name="name" /></div>
+    <br><div style="color:white;text-align:center;font-weight:bold"><label for="date">Please enter a date(YYYY-MM-DD):
+        </label><input style="width:330px;height:24px;background-color:#FDEBD0;"
+                       type="text" id="date" name="date" /></div></br>
+    <br><br><div style="color:black;text-align:center;font-weight:bold"><label for="basic">Brief Forecast&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input style="width:16px;height:16px;" type="checkbox" name="type"
+               value="basic" id="basic"/><br /></div>
+    <br><div style="color:black;text-align:center;font-weight:bold;"><label for="professional">Professional Guide</label>
+        <input style="width:16px;height:16px;" type="checkbox" name="type"
+               value="professional" id="professional"/><br /></div>
+    <br><br><br><br>
+    <div style="text-align:center;">
+        <a href='/'><input type="reset" style="font-family:Impact;color:red;font-size:130%;width:140px;height:60px;"
+                              value="Clear" name="clrbtn"/></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="submit" style="font-family:Impact;color:green;font-size:130%;width:140px;height:60px;"
+               value=Search name="schbtn"/></div></form>
+    <br>
+{% if prompt %}
+<div class= 'formtitle' style="color:red ;text-align:center;font-size:150%"><br><b>{{prompt}}</b></div>
+{% endif %}
+</body>
+</html>
