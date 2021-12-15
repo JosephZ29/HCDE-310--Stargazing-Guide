@@ -1,1 +1,6 @@
 # HCDE-310--Stargazing-Guide
+This is my final project for HCDE 310. It's name is Stargazing Guide. I use Forecast Weather API which includes all data of weather condtions, astronomy information, date weather forecast and hourly weather information in a huge dictionary. 
+
+My project has two funtions: brief forecast, which can do the breif weather forecast for the amateurs; professional guide, in which I use several tables to convert the row data into the data types we usually use and based on the hourly interval weather information to provide my stargazing suggestions. The second function of my project would provide more specific and professional data affecting stargazing experience.
+
+In this project, creating beautiful and user-friendly HTML templates is diffcult for me, and I spent lots of efforts on that. Besides, when I was debugging, I could know why my app would just call one-day forecast when I actually passed "days" parameter as three. At last, I fond the reason was about the type of parameter. Users' input is string type, and I thought the parameter would accpet datetime type, but I was wrong. It should be integer type. So I import datetime to convert string type to datetime, and then convert datetime to integer type (because there are "-" in users' input, so I cannot convert it to integer directly.)
